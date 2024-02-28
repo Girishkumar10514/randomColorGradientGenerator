@@ -1,0 +1,47 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.container{
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(45deg,#3366ff,#00ff99,#666633,#fff);
+    background-size: 200% 200%;
+    animation: color 8s ease-in-out infinite;
+
+}
+.btn{
+    position: relative;
+    top:50%;
+    color:#fff;
+    padding: 18px 42px;
+    border-radius: 8px;
+    border: 0px solid black;
+    background: #3366ff;
+    transition: all 0.2s ease;
+    font-size: medium;
+}
+.btn:active{
+    transform: scale(0.86);
+}
+
+@keyframes color {
+    0%{
+        background-position: 0% 50%;
+    }
+    25%{
+        background-position: 50% 100%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    75%{
+        background-position: 50% 0%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+    
+}
